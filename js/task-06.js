@@ -1,6 +1,6 @@
 const textInput = document.querySelector("#validation-input");
 const onValidateInput = (event) => {
-  if (event.target.value.length >= event.target.dataset.length) {
+  if (event.target.value.length == event.target.dataset.length) {
     event.target.classList.remove("invalid");
     event.target.classList.add("valid");
   } else {

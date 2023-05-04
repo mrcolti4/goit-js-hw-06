@@ -5,7 +5,7 @@ const onSubmitForm = (event) => {
     elements: { email, password },
   } = event.currentTarget;
   if (email.value === "" || password.value === "") {
-    alert("Заповніть поля!");
+    return alert("Заповніть поля!");
   }
   console.log({ email: email.value, password: password.value });
   event.currentTarget.reset();
